@@ -1,77 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>For The Moment</title>
-  <style>
-    body {
-      font-family: Georgia, serif;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-      background: #faf7f2;
-      color: #333;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For The Moment | Amanda Turner</title>
 
-    header {
-      padding: 80px 20px;
-      background: white;
-    }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    h1 {
-      font-size: 4rem;
-      margin-bottom: 10px;
-    }
+body {
+    font-family: Georgia, serif;
+    color: #333;
+    background: #faf8f5;
+    line-height: 1.6;
+}
 
-    h2 {
-      font-weight: normal;
-      color: #777;
-    }
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: white;
+}
 
-    section {
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 0 20px;
-    }
+h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
 
-    .categories {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
+.subtitle {
+    font-size: 1.3rem;
+    color: #777;
+    margin-bottom: 15px;
+}
 
-    .category {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      min-width: 150px;
-    }
-  </style>
+.tagline {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #a67b5b;
+}
+
+.intro {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.categories {
+    max-width: 1100px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    padding: 40px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
+}
+
+.about {
+    background: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+    color: #777;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>For The Moment</h1>
-  <h2>by Amanda Turner</h2>
-  <p>Beauty • Food • Travel</p>
+    <h1>For The Moment</h1>
+    <div class="subtitle">by Amanda Turner</div>
+    <div class="tagline">Beauty • Food • Travel</div>
 </header>
 
-<section>
-  <h3>Welcome</h3>
-
-  <p>
-    Welcome to For The Moment, a lifestyle blog sharing beauty favorites,
-    travel inspiration, restaurant discoveries, recipes and everyday moments.
-  </p>
-
-  <div class="categories">
-    <div class="category">Beauty</div>
-    <div class="category">Food</div>
-    <div class="category">Travel</div>
-  </div>
+<section class="intro">
+    <p>
+        Welcome to For The Moment, a lifestyle destination where I share
+        beauty favorites, delicious recipes, restaurant discoveries,
+        travel inspiration, and everyday moments worth remembering.
+    </p>
 </section>
+
+<section class="categories">
+
+    <div class="card">
+        <h2>Beauty</h2>
+        <p>
+            Honest product reviews, skincare favorites,
+            makeup finds, and beauty routines worth trying.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Food</h2>
+        <p>
+            Easy recipes, restaurant recommendations,
+            local favorites, and memorable dining experiences.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Travel</h2>
+        <p>
+            Travel guides, weekend getaways,
+            destination inspiration, and helpful tips.
+        </p>
+    </div>
+
+</section>
+
+<section class="about">
+    <div class="about-content">
+        <h2>Meet Amanda</h2>
+        <br>
+        <p>
+            I'm Amanda Turner, a content creator sharing beauty, food,
+            travel, and the moments that make everyday life memorable.
+            For The Moment began as a photography business and has evolved
+            into a lifestyle blog dedicated to inspiration, discovery,
+            and storytelling.
+        </p>
+    </div>
+</section>
+
+<footer>
+    © 2026 For The Moment • Amanda Turner
+</footer>
 
 </body>
 </html>
