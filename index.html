@@ -20,9 +20,9 @@ body {
 }
 
 header {
+    position: relative;
     text-align: center;
-    padding: 100px 20px;
-    background: white;
+    padding: 0;
 }
 
     header img {
@@ -34,16 +34,13 @@ header {
 }
 
 .hero-text {
-    grid-area: hero;
-    align-self: center;
-    justify-self: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 
     color: white;
     text-align: center;
-
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-
-    z-index: 1;
 }
     
 h1 {
