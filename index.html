@@ -188,6 +188,55 @@ margin-bottom: 20px;
    background: #f2f2f2;
 
 }
+.contact {
+    background: #faf8f5;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.contact-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #555;
+}
+   
 footer {
     padding: 40px;
     text-align: center;
@@ -297,6 +346,59 @@ evolved into a lifestyle blog dedicated to inspiration,
     </div>
 
 </section>
+
+  <section class="contact">
+
+    <h2>Let's Work Together</h2>
+
+    <p class="contact-intro">
+        Interested in partnering with For The Moment? I collaborate with
+        brands, hotels, tourism boards, restaurants, and lifestyle companies
+        to create authentic content, photography, reviews, and social media
+        campaigns that connect with audiences.
+    </p>
+
+    <form
+        class="contact-form"
+        action="https://formspree.io/f/mnpndpol"
+        method="POST">
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required>
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required>
+
+        <input
+            type="text"
+            name="company"
+            placeholder="Company Name">
+
+        <input
+            type="text"
+            name="service"
+            placeholder="Project Type (Sponsored Post, UGC, Photography, etc.)">
+
+        <textarea
+            name="message"
+            rows="6"
+            placeholder="Tell me about your project..."
+            required></textarea>
+
+        <button type="submit">
+            Send Inquiry
+        </button>
+
+    </form>
+
+</section>
+
 
 <footer>
     © 2026 For The Moment • Amanda Turner
