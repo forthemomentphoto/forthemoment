@@ -184,15 +184,26 @@ margin-bottom: 20px;
     line-height: 1.8;
     margin-bottom: 20px;
 }
-   .featured-post {
+.featured-post {
     background: white;
-    padding: 80px 20px;
-    text-align: center;
+    padding: 0;
+    margin: 80px auto;
+    max-width: 1100px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+.featured-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
 }
 
 .featured-content {
-    max-width: 800px;
-    margin: auto;
+    padding: 50px;
+    text-align: center;
 }
 
 .featured-label {
@@ -204,19 +215,19 @@ margin-bottom: 20px;
 
 .featured-post h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
 .featured-post p {
-    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
     color: #666;
-    margin-bottom: 30px;
 }
 
 .featured-button {
     display: inline-block;
-    padding: 12px 30px;
+    padding: 14px 32px;
     background: #333;
     color: white;
     text-decoration: none;
@@ -226,6 +237,7 @@ margin-bottom: 20px;
 .featured-button:hover {
     background: #555;
 }
+
 
 .contact {
     background: #faf8f5;
@@ -363,25 +375,31 @@ travel.html
 </section>
 <section class="featured-post">
 
+    kyoto-japan-bamboo-forest-01.JPG
+
     <div class="featured-content">
 
-        <p class="featured-label">Latest Post</p>
+        <p class="featured-label">
+            Latest Post
+        </p>
 
         <h2>Exploring Kyoto's Bamboo Forest</h2>
 
         <p>
-            Discover one of Japan's most iconic landscapes, photography
-            tips from the Arashiyama Bamboo Grove, and why Kyoto remains
-            one of my favorite destinations.
+            Discover one of Japan's most iconic landscapes,
+            photography tips from the Arashiyama Bamboo Grove,
+            and why Kyoto remains one of my favorite destinations.
         </p>
 
-        <a href="blog.html" class="featured-button">
+        posts/kyoto-bamboo-forest.html
             Read the Post →
         </a>
 
     </div>
 
 </section>
+
+
 
 <section class="about">
     <div class="about-grid">
