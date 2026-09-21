@@ -133,6 +133,18 @@ margin-bottom: 20px;
 .card p {
     color: #666;
 }
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}   
 
 .about {
     background: white;
@@ -307,38 +319,46 @@ footer {
 
 <section class="categories">
 
+<a href="beauty.html" class="card-link">
     <div class="card">
         <img src="beauty.JPG" alt="Beauty">
-        
+
         <h2>Beauty</h2>
-        
+
         <p>
             Honest product reviews, skincare favorites,
             makeup finds, and beauty routines worth trying.
         </p>
     </div>
+</a>
 
+
+food.html
     <div class="card">
         <img src="food.JPEG" alt="Food">
-        
+
         <h2>Food</h2>
-        
+
         <p>
             Fun recipes, restaurant recommendations,
             local favorites, and memorable dining experiences.
         </p>
     </div>
+</a>
 
+travel.html
     <div class="card">
         <img src="paris-travel.JPG" alt="Travel">
-        
+
         <h2>Travel</h2>
-        
+
         <p>
             Travel guides, weekend getaways,
             destination inspiration, and helpful tips.
         </p>
     </div>
+</a>
+
 
 </section>
 <section class="featured-post">
