@@ -355,6 +355,12 @@ h1 {
 
 @media (max-width: 768px) {
 
+    /* Hero */
+
+    .hero-text {
+        width: 90%;
+    }
+
     h1 {
         font-size: 48px;
     }
@@ -367,14 +373,13 @@ h1 {
         height: 450px;
     }
 
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+    /* Categories */
+
+    .categories {
+        gap: 20px;
     }
 
-    .about-content {
-        text-align: center;
-    }
+    /* Featured Post */
 
     .featured-post h2 {
         font-size: 2rem;
@@ -384,10 +389,47 @@ h1 {
         padding: 30px;
     }
 
-    .contact h2,
+    .featured-image {
+        height: 300px;
+    }
+
+    /* Meet Amanda */
+
+    .about-grid {
+        display: block;
+    }
+
+    .about-image {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .about-image img {
+        width: 80%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
     .about-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .about-content p {
+        font-size: 1.1rem;
+    }
+
+    /* Contact */
+
+    .contact h2 {
         font-size: 2.2rem;
     }
+
+    /* Blog Posts */
 
     .article {
         padding: 0 20px;
@@ -396,7 +438,13 @@ h1 {
     .article h1 {
         font-size: 2.5rem;
     }
+
+    .article p {
+        font-size: 1.05rem;
+    }
+
 }
+
    
 </style>
 </head>
