@@ -3,676 +3,191 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="For The Moment by Amanda Turner — beauty, home, food and everyday lifestyle, told through thoughtful photography and authentic storytelling.">
 <title>For The Moment | Amanda Turner</title>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap">
-
-   
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-   @font-face {
-      font-family: 'Signatie';
-      src: url('Signatie.otf') format('opentype');
-}
-   @font-face {
-      font-family: 'Amsterdam Handwriting';
-      src: url('Amsterdam Handwriting.ttf') format('truetype');
-}
-
-body {
-    font-family: 'Lora', serif;
-    color: #333;
-    background: #faf8f5;
-    line-height: 1.6;
-}
-
-header {
-    position: relative;
-    text-align: center;
-    padding: 0;
-}
-
-    header img {
-    grid-area: hero;
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    object-position: center 65%;
-}
-
-.hero-text {
-   position: absolute;
-   top: 14%;
-   left: 50%;
-   transform: translateX(-50%);
-   text-align: center;
-   color: white;
-   text-shadow:
-   0 2px 4px rgba(0,0,0,.5),
-   0 4px 16px rgba(0,0,0,.4);
-   z-index: 2;
-}
-    
-h1 {
-    font-family: 'Amsterdam Handwriting', cursive;
-    font-size: 70px;
-    font-weight: normal;
-    line-height: 1.3;
-    margin: 0;
-    color: white;
-    left: 30px;
-}
-
-
-.subtitle {
-    font-size: 1.3rem;
-    color: white;
-    margin-bottom: 15px;
-}
-
-.tagline {
-    font-size: 26px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: white;
-}
-
-.intro {
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 0 20px;
-    text-align: center;
-}
-
-.editor-note {
-   font-family: Georgia, serif;
-   font-size: 20px;
-   line-height: 1.8;
-   max-width: 850px;
-   margin: auto;
-   text-align: center;
-   color: #3f3b36;
-}
-
-.categories {
-    max-width: 1100px;
-    margin: 80px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    padding: 0 20px;
-}
-
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,.08);
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-   
-.card img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    display: block;
-    border-radius: 12px;
-    margin-bottom: 20px;
-}
-
-
-.card h2,
-.about-content h2 {
-    font-family: 'Playfair Display', serif;
-}
-
-.card p {
-    color: #666;
-}
-.card-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.card {
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-}   
-
-.about {
-    background: white;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.about-content {
-    max-width: 700px;
-    margin: auto;
-}
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 60px;
-    align-items: center;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.about-image img {
-    width: 100%;
-    display: block;
-}
-    
-.about-content {
-    text-align: left;
-}
-
-.about-content h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.about-content p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-.featured-post {
-    background: white;
-    padding: 0;
-    margin: 80px auto;
-    max-width: 1100px;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,.08);
-}
-
-.featured-image {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    display: block;
-}
-
-.featured-content {
-    padding: 50px;
-    text-align: center;
-}
-
-.featured-label {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #999;
-    margin-bottom: 15px;
-}
-   
-.featured-link {
-
-    text-decoration: none;
-    color: inherit;
-    display: block;
-
-}
-
-.featured-post {
-
-    transition: transform 0.3s ease;
-
-}
-
-.featured-post:hover {
-
-    transform: translateY(-5px);
-
-}
- 
-.featured-post h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.featured-post p {
-    max-width: 700px;
-    margin: 0 auto 30px;
-    color: #666;
-}
-
-.featured-button {
-    display: inline-block;
-    padding: 14px 32px;
-    background: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-}
-
-.featured-button:hover {
-    background: #555;
-}
-
-
-.contact {
-    background: #faf8f5;
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.contact h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.contact-intro {
-    max-width: 700px;
-    margin: 0 auto 40px;
-    font-size: 1.1rem;
-    color: #666;
-}
-
-.contact-form {
-    max-width: 700px;
-    margin: auto;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 1rem;
-}
-
-.contact-form button {
-    background: #333;
-    color: white;
-    border: none;
-    padding: 14px 30px;
-    font-size: 1rem;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.contact-form button:hover {
-    background: #555;
-}
-   
-   
-.site-footer {
-    background: #ffffff;
-    text-align: center;
-    padding: 60px 20px;
-    border-top: 1px solid #e5e5e5;
-}
-
-.site-footer h3 {
-    font-family: 'Amsterdam Handwriting', cursive;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.site-footer p {
-    color: #777;
-    margin-bottom: 20px;
-}
-
-.footer-links {
-    margin-bottom: 20px;
-}
-
-.footer-links a,
-.footer-social a {
-    text-decoration: none;
-    color: #333;
-    margin: 0 12px;
-    font-weight: 500;
-}
-
-.footer-links a:hover,
-.footer-social a:hover {
-    opacity: .7;
-}
-
-.copyright {
-    font-size: .9rem;
-    color: #999;
-    margin-top: 30px;
-}
-
-@media (max-width: 768px) {
-
-    /* Hero */
-
-    .hero-text {
-        width: 90%;
-    }
-
-    h1 {
-        font-size: 48px;
-    }
-
-    .tagline {
-        font-size: 18px;
-    }
-
-    header img {
-        height: 450px;
-    }
-
-    /* Categories */
-
-    .categories {
-        gap: 20px;
-    }
-
-    /* Featured Post */
-
-    .featured-post h2 {
-        font-size: 2rem;
-    }
-
-    .featured-content {
-        padding: 30px;
-    }
-
-    .featured-image {
-        height: 300px;
-    }
-
-    /* Meet Amanda */
-
-    .about-grid {
-        display: block;
-    }
-
-    .about-image {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .about-image img {
-        width: 80%;
-        max-width: 320px;
-        margin: 0 auto;
-    }
-
-    .about-content {
-        text-align: center;
-    }
-
-    .about-content h2 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-    }
-
-    .about-content p {
-        font-size: 1.1rem;
-    }
-
-    /* Contact */
-
-    .contact h2 {
-        font-size: 2.2rem;
-    }
-
-    /* Blog Posts */
-
-    .article {
-        padding: 0 20px;
-    }
-
-    .article h1 {
-        font-size: 2.5rem;
-    }
-
-    .article p {
-        font-size: 1.05rem;
-    }
-
-}
-
-   
+:root{--ivory:#f4f0e8;--paper:#fbf9f5;--taupe:#d8cfc2;--camel:#978977;--brown:#40372f;--ink:#302b26;--muted:#777067;--line:#e5ded3}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--paper);line-height:1.7}
+a{color:inherit}
+.site-header{background:var(--paper);border-bottom:1px solid var(--line);position:relative;z-index:5}
+.topline{text-align:center;padding:23px 20px 17px}
+.brand{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2rem,4vw,2.8rem);letter-spacing:.04em;text-decoration:none;color:var(--brown)}
+.brand-sub{display:block;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--camel);margin-top:2px}
+.nav{display:flex;justify-content:center;align-items:center;gap:clamp(16px,3vw,38px);padding:13px 20px 17px;flex-wrap:wrap}
+.nav a{text-decoration:none;text-transform:uppercase;font-size:.69rem;letter-spacing:.15em;color:var(--brown);transition:color .2s}
+.nav a:hover{color:var(--camel)}
+.hero{position:relative;min-height:590px;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(rgba(31,27,23,.30),rgba(31,27,23,.38)),url('kyoto-japan-bamboo-forest-01.JPG') center 53%/cover no-repeat;color:white;padding:70px 22px}
+.hero-inner{max-width:760px}
+.eyebrow{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;margin-bottom:22px}
+.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.8rem,6vw,5.1rem);font-weight:400;line-height:1.12;margin-bottom:22px}
+.hero p{font-size:1.02rem;max-width:610px;margin:0 auto 30px;color:#f5f1eb}
+.button{display:inline-block;text-decoration:none;background:var(--ivory);color:var(--brown);padding:13px 25px;text-transform:uppercase;letter-spacing:.14em;font-size:.68rem;border:1px solid var(--ivory);transition:all .2s}
+.button:hover{background:transparent;color:white}
+.button.dark{background:var(--brown);border-color:var(--brown);color:var(--paper)}
+.button.dark:hover{background:transparent;color:var(--brown)}
+.intro{max-width:850px;margin:0 auto;padding:86px 24px 68px;text-align:center}
+.kicker{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--camel);margin-bottom:16px}
+.intro h2,.section-heading{font-family:'Playfair Display',Georgia,serif;font-weight:400;color:var(--brown)}
+.intro h2{font-size:clamp(2rem,4vw,3rem);line-height:1.25;margin-bottom:20px}
+.intro p{max-width:690px;margin:auto;color:var(--muted);font-size:1rem}
+.categories{max-width:1180px;margin:0 auto;padding:0 24px 88px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.category-card{text-decoration:none;display:block}
+.category-card img{width:100%;height:330px;object-fit:cover;display:block;transition:transform .5s}
+.category-image{overflow:hidden;background:var(--taupe)}
+.category-card:hover img{transform:scale(1.035)}
+.category-card h3{font-family:'Playfair Display',Georgia,serif;font-size:1.55rem;font-weight:400;color:var(--brown);margin:17px 0 5px}
+.category-card p{font-size:.88rem;color:var(--muted);max-width:330px}
+.category-card .learn{display:inline-block;margin-top:13px;font-size:.67rem;text-transform:uppercase;letter-spacing:.15em;color:var(--camel)}
+.editorial-band{background:var(--ivory);padding:82px 24px}
+.editorial-inner{max-width:1050px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+.editorial-inner img{width:100%;max-height:470px;object-fit:cover;display:block}
+.editorial-copy h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2rem,4vw,3rem);font-weight:400;line-height:1.2;color:var(--brown);margin-bottom:20px}
+.editorial-copy p{color:var(--muted);margin-bottom:18px}
+.featured{max-width:1120px;margin:85px auto;padding:0 24px}
+.featured a{text-decoration:none}
+.featured-card{display:grid;grid-template-columns:1.1fr 1fr;background:white;border:1px solid var(--line)}
+.featured-card img{width:100%;height:390px;object-fit:cover}
+.featured-copy{padding:45px;display:flex;flex-direction:column;justify-content:center}
+.featured-copy h2{font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:2.3rem;line-height:1.2;color:var(--brown);margin:10px 0 15px}
+.featured-copy p{color:var(--muted);font-size:.93rem}
+.work{background:var(--brown);color:var(--ivory);padding:84px 24px;text-align:center}
+.work-inner{max-width:760px;margin:auto}
+.work h2{font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(2.2rem,4vw,3.2rem);margin-bottom:18px}
+.work p{color:#e2dacf;margin:0 auto 28px;max-width:670px}
+.work .button{background:var(--ivory);color:var(--brown);border-color:var(--ivory)}
+.site-footer{text-align:center;padding:44px 20px 30px;background:var(--paper)}
+.footer-brand{font-family:'Playfair Display',Georgia,serif;font-size:1.8rem;color:var(--brown);margin-bottom:12px}
+.footer-links{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin:16px 0 22px}
+.footer-links a{text-decoration:none;font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.social a{font-size:.8rem;color:var(--camel);text-decoration:none}
+.copyright{font-size:.72rem;color:#999;margin-top:25px}
+@media(max-width:760px){.hero{min-height:500px}.nav{gap:13px 20px}.categories{grid-template-columns:1fr;max-width:540px;padding-bottom:65px}.category-card img{height:300px}.editorial-inner,.featured-card{grid-template-columns:1fr;gap:28px}.editorial-inner{gap:30px}.editorial-band{padding:60px 24px}.featured-card img{height:290px}.featured-copy{padding:30px}.featured-copy h2{font-size:2rem}.intro{padding:65px 24px 50px}}
 </style>
 </head>
-
 <body>
-
-<header>
-
-<img src="kyoto-japan-bamboo-forest-01.JPG" alt="Amanda Turner">
-
-<div class="hero-text">
-    <h1>for the moment</h1>
-    
-    <div class="subtitle">
-        by Amanda Turner
-    </div>
-
-    <div class="tagline">
-        Beauty • Food • Travel
-    </div>
-
-
-</div>
-
+<header class="site-header" id="top">
+  <div class="topline">
+    <a class="brand" href="index.html">For The Moment</a>
+    <span class="brand-sub">Amanda Turner · Lifestyle &amp; UGC Creator</span>
+  </div>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="blog.html">Journal</a>
+    <a href="beauty.html">Beauty</a>
+    <a href="#home-lifestyle">Home</a>
+    <a href="food.html">Food</a>
+    <a href="travel.html">Lifestyle</a>
+    <a href="#work-with-me">Work With Me</a>
+  </nav>
 </header>
 
-
-
-<section class="intro">
-   <p class="editor-note">
-         Welcome to For The Moment, a lifestyle destination where I share 
-      beauty favorites, delicious recipes, restaurant discoveries, travel 
-      inspiration, and everyday moments worth remembering.
-   </p>
-</section>
-
-<section class="categories">
-
-    <a href="beauty.html" class="card-link">
-        <div class="card">
-            <img src="beauty.JPG" alt="Beauty">
-
-            <h2>Beauty</h2>
-
-            <p>
-                Honest product reviews, skincare favorites,
-                makeup finds, and beauty routines worth trying.
-            </p>
-        </div>
-    </a>
-
-    <a href="food.html" class="card-link">
-        <div class="card">
-            <img src="food.JPEG" alt="Food">
-
-            <h2>Food</h2>
-
-            <p>
-                Fun recipes, restaurant recommendations,
-                local favorites, and memorable dining experiences.
-            </p>
-        </div>
-    </a>
-
-    <a href="travel.html" class="card-link">
-        <div class="card">
-            <img src="paris-travel.JPG" alt="Travel">
-
-            <h2>Travel</h2>
-
-          <p>
-          Travel guides, destination highlights,
-          hotel reviews, itinerary inspiration,
-          and helpful tips for your next adventure.
-         </p>
-
-        </div>
-    </a>
-
-</section>
-
-<a href="posts/kyoto-bamboo-forest.html" class="featured-link">
-   
-   <section class="featured-post">
-<img
-
-            src="kyoto-japan-bamboo-forest-01.JPG"
-
-            alt="Kyoto Bamboo Forest"
-
-            class="featured-image">
-<div class="featured-content">
-<p class="featured-label">
-
-                Latest Post
-</p>
-<h2>Exploring Kyoto's Bamboo Forest</h2>
-<p>
-
-                Discover one of Japan's most iconic landscapes,
-
-                photography tips from the Arashiyama Bamboo Grove,
-
-                and why Kyoto remains one of my favorite destinations.
-</p>
-</div>
-</section>
-</a>
- 
-
-
-
-
-<section class="about">
-    <div class="about-grid">
-        
-        <div class="about-image">
-            <img src="amanda-content-creator.JPG" alt="Amanda portrait">
-        </div>
-
-        <div class="about-content">
-
-            <h2>Meet Amanda</h2>
-            
-            <p>
-                I'm Amanda Turner, a content creator sharing beauty,
-                food, travel, and the moments that make everyday life
-                memorable.
-            </p>
- 
-            <p>
-                For The Moment began as a photography business and has
-evolved into a lifestyle blog dedicated to inspiration,
-                discovery, and storytelling.
-            </p>
-
-        </div>
-
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Beauty · Home · Food · Everyday Life</p>
+      <h1>Creating content for the moments in between.</h1>
+      <p>A thoughtful mix of everyday discoveries, personal style, good food and the little details that make a house feel like home.</p>
+      <a class="button" href="blog.html">Explore the Journal</a>
     </div>
+  </section>
 
-</section>
+  <section class="intro">
+    <p class="kicker">A lifestyle journal by Amanda Turner</p>
+    <h2>Beautifully ordinary. Thoughtfully told.</h2>
+    <p>For The Moment is a lifestyle space celebrating beauty, home, food and everyday discoveries. Through photography, storytelling and honest recommendations, I share the products, places and small moments worth remembering.</p>
+  </section>
 
-  <section class="contact">
+  <section class="categories" aria-label="Explore the journal">
+    <a class="category-card" href="beauty.html">
+      <div class="category-image"><img src="beauty.JPG" alt="Beauty and skincare favorites"></div>
+      <h3>Beauty</h3>
+      <p>Skincare, makeup, tried-and-loved finds and realistic routines.</p>
+      <span class="learn">Explore beauty →</span>
+    </a>
+    <a class="category-card" href="#home-lifestyle">
+      <div class="category-image"><img src="amanda-content-creator.JPG" alt="Amanda Turner, creator of For The Moment"></div>
+      <h3>Home &amp; Everyday</h3>
+      <p>Thoughtful details, home projects, routines and the things that make everyday life feel special.</p>
+      <span class="learn">A little more about the journal ↓</span>
+    </a>
+    <a class="category-card" href="food.html">
+      <div class="category-image"><img src="food.JPEG" alt="Food, recipes and entertaining"></div>
+      <h3>Food</h3>
+      <p>Recipes, entertaining, restaurant discoveries and memorable meals.</p>
+      <span class="learn">Explore food →</span>
+    </a>
+  </section>
 
-    <h2>Let's Work Together</h2>
+  <section class="editorial-band" id="home-lifestyle">
+    <div class="editorial-inner">
+      <img src="amanda-content-creator.JPG" alt="Amanda Turner">
+      <div class="editorial-copy">
+        <p class="kicker">A little introduction</p>
+        <h2>Meet Amanda</h2>
+        <p>I'm Amanda Turner — a content creator with a background in luxury wedding photography and a love for visual storytelling.</p>
+        <p>For The Moment began as a photography business and has grown into a lifestyle journal where beautiful imagery meets real life: beauty finds, home projects, food worth sharing and places that stay with you.</p>
+        <p>My approach is equal parts thoughtful visuals and personality-driven storytelling — polished, but always personal.</p>
+        <a class="button dark" href="blog.html">Read the Journal</a>
+      </div>
+    </div>
+  </section>
 
-    <p class="contact-intro">
-        Interested in partnering with For The Moment? I collaborate with
-        brands, hotels, tourism boards, restaurants, and lifestyle companies
-        to create authentic content, photography, reviews, and social media
-        campaigns that connect with audiences.
-    </p>
+  <section class="featured">
+    <a href="posts/kyoto-bamboo-forest.html">
+      <div class="featured-card">
+        <img src="kyoto-japan-bamboo-forest-01.JPG" alt="The bamboo pathways of Kyoto, Japan">
+        <div class="featured-copy">
+          <p class="kicker">From the journal · Travel &amp; lifestyle</p>
+          <h2>Exploring Kyoto's Bamboo Forest</h2>
+          <p>A destination story from the journal, with a little inspiration for your next adventure.</p>
+          <span class="learn">Read the story →</span>
+        </div>
+      </div>
+    </a>
+  </section>
 
-    <form
-        class="contact-form"
-        action="https://formspree.io/f/mnpndpol"
-        method="POST">
+  <section class="work" id="work-with-me">
+    <div class="work-inner">
+      <p class="eyebrow">For brands &amp; creative partners</p>
+      <h2>Let's create something worth remembering.</h2>
+      <p>I partner with beauty, home, food and lifestyle brands to create thoughtful UGC, product photography and personality-led social content. With a photographer's eye and a storyteller's approach, I create content that feels natural, engaging and true to the brand.</p>
+      <a class="button" href="#contact">Work With Amanda</a>
+    </div>
+  </section>
 
-        <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required>
-
-        <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required>
-
-        <input
-            type="text"
-            name="company"
-            placeholder="Company Name">
-
-        <input
-            type="text"
-            name="service"
-            placeholder="Project Type (Sponsored Post, UGC, Photography, etc.)">
-
-        <textarea
-            name="message"
-            rows="6"
-            placeholder="Tell me about your project..."
-            required></textarea>
-       <input
-    type="hidden"
-    name="_next"
-    value="https://forthemomentphoto.github.io/forthemoment/thank-you.html">
-
-        <button type="submit">
-            Send Inquiry
-        </button>
-
+  <section class="intro" id="contact">
+    <p class="kicker">Collaborations &amp; inquiries</p>
+    <h2>Tell me what you're dreaming up.</h2>
+    <p>For UGC projects, sponsored content, photography and creative partnerships, send a note below.</p>
+    <form action="https://formspree.io/f/mnpndpol" method="POST" style="max-width:680px;margin:30px auto 0;text-align:left">
+      <label for="name" style="display:block;font-size:.75rem;letter-spacing:.08em;margin:0 0 6px">Name</label>
+      <input id="name" type="text" name="name" placeholder="Your name" required style="width:100%;padding:14px;border:1px solid var(--line);background:white;margin-bottom:14px;font:inherit">
+      <label for="email" style="display:block;font-size:.75rem;letter-spacing:.08em;margin:0 0 6px">Email</label>
+      <input id="email" type="email" name="email" placeholder="Email address" required style="width:100%;padding:14px;border:1px solid var(--line);background:white;margin-bottom:14px;font:inherit">
+      <label for="company" style="display:block;font-size:.75rem;letter-spacing:.08em;margin:0 0 6px">Brand or company</label>
+      <input id="company" type="text" name="company" placeholder="Company name" style="width:100%;padding:14px;border:1px solid var(--line);background:white;margin-bottom:14px;font:inherit">
+      <label for="service" style="display:block;font-size:.75rem;letter-spacing:.08em;margin:0 0 6px">Project type</label>
+      <input id="service" type="text" name="service" placeholder="UGC, sponsored content, photography..." style="width:100%;padding:14px;border:1px solid var(--line);background:white;margin-bottom:14px;font:inherit">
+      <label for="message" style="display:block;font-size:.75rem;letter-spacing:.08em;margin:0 0 6px">A little about your project</label>
+      <textarea id="message" name="message" rows="5" placeholder="Tell me what you have in mind..." required style="width:100%;padding:14px;border:1px solid var(--line);background:white;margin-bottom:18px;font:inherit;resize:vertical"></textarea>
+      <input type="hidden" name="_next" value="https://forthemomentphoto.github.io/forthemoment/thank-you.html">
+      <button class="button dark" type="submit" style="cursor:pointer;font-family:inherit">Send Inquiry</button>
     </form>
-
-</section>
-
+  </section>
+</main>
 
 <footer class="site-footer">
-
-    <h3>For The Moment</h3>
-
-
-    <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="blog.html">Blog</a>
-        <a href="beauty.html">Beauty</a>
-        <a href="food.html">Food</a>
-        <a href="travel.html">Travel</a>
-    </div>
-
-    <div class="footer-social">
-         <a href="https://instagram.com/forthemomentphoto"
-      target="_blank">
-      
-   Instagram
-
-</a>
-       
-</div>
-
-    <p class="copyright">
-        © 2026 For The Moment • Amanda Turner
-    </p>
-
+  <div class="footer-brand">For The Moment</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a><a href="blog.html">Journal</a><a href="beauty.html">Beauty</a><a href="#home-lifestyle">Home</a><a href="food.html">Food</a><a href="travel.html">Lifestyle</a><a href="#work-with-me">Work With Me</a>
+  </div>
+  <div class="social"><a href="https://instagram.com/forthemomentphoto" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+  <p class="copyright">© 2026 For The Moment | Amanda Turner</p>
 </footer>
-
-
 </body>
 </html>
