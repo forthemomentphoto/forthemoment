@@ -50,10 +50,15 @@ a{color:inherit}
 .about{display:grid;grid-template-columns:.85fr 1.15fr;gap:65px;align-items:center}
 .about img{width:100%;max-height:520px;object-fit:cover}
 .about-copy p{color:var(--muted);margin:0 0 15px}
-.journal-band{background:#eee8de}
-.journal-inner{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.journal-inner img{width:100%;height:350px;object-fit:cover}
-.journal-inner p{color:var(--muted);margin-bottom:20px}
+.journal-band{padding:0;background:var(--brown)}
+.journal-inner{max-width:1180px;padding:58px 26px}
+.journal-feature{position:relative;min-height:490px;overflow:hidden;background:#6e665c}
+.journal-image-wrap{position:absolute;inset:0}
+.journal-inner img{width:100%;height:100%;min-height:490px;object-fit:cover;display:block}
+.journal-copy{position:absolute;left:0;bottom:0;max-width:500px;padding:34px 38px;background:var(--paper)}
+.journal-copy h2{max-width:420px;margin:14px 0 18px}
+.journal-copy p{color:var(--muted);margin-bottom:22px}
+.journal-copy .kicker{margin-bottom:0}
 .contact{background:var(--brown);color:var(--ivory);text-align:center}
 .contact h2{color:var(--ivory)}
 .contact p{color:#e2dacf;max-width:650px;margin:0 auto 25px}
@@ -63,7 +68,7 @@ a{color:inherit}
 .footer-links{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin:18px 0}
 .social a{font-size:.78rem;color:var(--camel);text-decoration:none}
 .copyright{font-size:.7rem;color:#999;margin-top:18px}
-@media(max-width:800px){.header-inner{flex-direction:column;padding:18px 20px}.brand{font-size:2rem}.brand small{font-size:.58rem}.nav{justify-content:center;gap:12px 18px}.hero{grid-template-columns:1fr;padding:22px 20px 52px;gap:24px}.hero-copy{padding:25px 3px 0}.hero-image{height:420px;min-height:0;order:-1}.work-grid{grid-template-columns:1fr;max-width:520px;margin:32px auto 0}.work-card img{height:320px}.about,.journal-inner{grid-template-columns:1fr;gap:26px}.about-copy,.about img{grid-column:1;grid-row:auto}.about img{height:360px;max-height:none;order:-1}.section{padding:58px 22px}.about-section,.journal-band{padding-top:58px;padding-bottom:58px}.journal-inner img{height:300px}.journal-inner>div{max-width:none}.button.light{margin:10px 0 0}}
+@media(max-width:800px){.header-inner{flex-direction:column;padding:18px 20px}.brand{font-size:2rem}.brand small{font-size:.58rem}.nav{justify-content:center;gap:12px 18px}.hero{grid-template-columns:1fr;padding:22px 20px 52px;gap:24px}.hero-copy{padding:25px 3px 0}.hero-image{height:420px;min-height:0;order:-1}.work-grid{grid-template-columns:1fr;max-width:520px;margin:32px auto 0}.work-card img{height:320px}.about{grid-template-columns:1fr;gap:26px}.about-copy,.about img{grid-column:1;grid-row:auto}.about img{height:360px;max-height:none;order:-1}.section{padding:58px 22px}.about-section{padding-top:58px;padding-bottom:58px}.journal-band{padding:0}.journal-inner{padding:34px 20px}.journal-feature{min-height:500px}.journal-inner img{min-height:500px}.journal-copy{left:14px;right:14px;bottom:14px;max-width:none;padding:24px 25px}.button.light{margin:10px 0 0}}
 </style>
 </head>
 <body>
@@ -132,12 +137,16 @@ a{color:inherit}
 
   <section class="section journal-band">
     <div class="section-inner journal-inner">
-      <img src="kyoto-japan-bamboo-forest-01.JPG" alt="Bamboo forest in Kyoto, Japan">
-      <div>
-        <p class="kicker">Beyond the portfolio</p>
-        <h2>A place for the things I want to remember.</h2>
-        <p>The Journal is where I share travel notes, home projects, beauty discoveries, recipes and the everyday experiments that don't always go to plan.</p>
-        <a class="button" href="blog.html">Visit the journal</a>
+      <div class="journal-feature">
+        <div class="journal-image-wrap">
+          <img src="kyoto-japan-bamboo-forest-01.JPG" alt="Bamboo forest in Kyoto, Japan">
+        </div>
+        <div class="journal-copy">
+          <p class="kicker">The Journal · Notes from everyday life</p>
+          <h2>A little life, beyond the lens.</h2>
+          <p>Travel notes, home projects, beauty discoveries, recipes and the little experiments that make ordinary days more interesting. A more personal side of what inspires the work.</p>
+          <a class="button" href="blog.html">Visit the journal</a>
+        </div>
       </div>
     </div>
   </section>
