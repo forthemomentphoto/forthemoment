@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="For The Moment by Amanda Turner — beauty, home, food and everyday lifestyle, told through thoughtful photography and authentic storytelling.">
-<title>For The Moment | Amanda Turner</title>
+<meta name="description" content="Amanda Turner is a UGC creator and visual storyteller sharing beauty, home, food and everyday life through thoughtful, personality-driven content.">
+<meta name="author" content="Amanda Turner">
+<meta property="og:title" content="Amanda Turner | UGC Creator & Visual Storyteller">
+<meta property="og:description" content="Beauty, home, food and everyday life — thoughtfully told, with a little humor along the way.">
+<title>Amanda Turner | UGC Creator & Visual Storyteller</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,179 +18,146 @@ html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--paper);line-height:1.7}
 a{color:inherit}
 .site-header{background:var(--paper);border-bottom:1px solid var(--line);position:relative;z-index:5}
-.topline{text-align:center;padding:23px 20px 17px}
-.brand{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2rem,4vw,2.8rem);letter-spacing:.04em;text-decoration:none;color:var(--brown)}
-.brand-sub{display:block;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--camel);margin-top:2px}
-.nav{display:flex;justify-content:center;align-items:center;gap:clamp(16px,3vw,38px);padding:13px 20px 17px;flex-wrap:wrap}
-.nav a{text-decoration:none;text-transform:uppercase;font-size:.69rem;letter-spacing:.15em;color:var(--brown);transition:color .2s}
-.nav a:hover{color:var(--camel)}
-.hero{position:relative;min-height:590px;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(rgba(31,27,23,.30),rgba(31,27,23,.38)),url('kyoto-japan-bamboo-forest-01.JPG') center 53%/cover no-repeat;color:white;padding:70px 22px}
-.hero-inner{max-width:760px}
-.eyebrow{font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;margin-bottom:22px}
-.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.8rem,6vw,5.1rem);font-weight:400;line-height:1.12;margin-bottom:22px}
-.hero p{font-size:1.02rem;max-width:610px;margin:0 auto 30px;color:#f5f1eb}
-.button{display:inline-block;text-decoration:none;background:var(--ivory);color:var(--brown);padding:13px 25px;text-transform:uppercase;letter-spacing:.14em;font-size:.68rem;border:1px solid var(--ivory);transition:all .2s}
-.button:hover{background:transparent;color:white}
-.button.dark{background:var(--brown);border-color:var(--brown);color:var(--paper)}
-.button.dark:hover{background:transparent;color:var(--brown)}
-.intro{max-width:850px;margin:0 auto;padding:86px 24px 68px;text-align:center}
-.kicker{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--camel);margin-bottom:16px}
-.intro h2,.section-heading{font-family:'Playfair Display',Georgia,serif;font-weight:400;color:var(--brown)}
-.intro h2{font-size:clamp(2rem,4vw,3rem);line-height:1.25;margin-bottom:20px}
-.intro p{max-width:690px;margin:auto;color:var(--muted);font-size:1rem}
-.categories{max-width:1180px;margin:0 auto;padding:0 24px 88px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.category-card{text-decoration:none;display:block}
-.category-card img{width:100%;height:330px;object-fit:cover;display:block;transition:transform .5s}
-.category-image{overflow:hidden;background:var(--taupe)}
-.category-card:hover img{transform:scale(1.035)}
-.category-card h3{font-family:'Playfair Display',Georgia,serif;font-size:1.55rem;font-weight:400;color:var(--brown);margin:17px 0 5px}
-.category-card p{font-size:.88rem;color:var(--muted);max-width:330px}
-.category-card .learn{display:inline-block;margin-top:13px;font-size:.67rem;text-transform:uppercase;letter-spacing:.15em;color:var(--camel)}
-.editorial-band{background:var(--ivory);padding:82px 24px}
-.editorial-inner{max-width:1050px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
-.editorial-inner img{width:100%;max-height:470px;object-fit:cover;display:block}
-.editorial-copy h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2rem,4vw,3rem);font-weight:400;line-height:1.2;color:var(--brown);margin-bottom:20px}
-.editorial-copy p{color:var(--muted);margin-bottom:18px}
-.featured{max-width:1120px;margin:85px auto;padding:0 24px}
-.featured a{text-decoration:none}
-.featured-card{display:grid;grid-template-columns:1.1fr 1fr;background:white;border:1px solid var(--line)}
-.featured-card img{width:100%;height:390px;object-fit:cover}
-.featured-copy{padding:45px;display:flex;flex-direction:column;justify-content:center}
-.featured-copy h2{font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:2.3rem;line-height:1.2;color:var(--brown);margin:10px 0 15px}
-.featured-copy p{color:var(--muted);font-size:.93rem}
-.work{background:var(--brown);color:var(--ivory);padding:84px 24px;text-align:center}
-.work-inner{max-width:760px;margin:auto}
-.work h2{font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(2.2rem,4vw,3.2rem);margin-bottom:18px}
-.work p{color:#e2dacf;margin:0 auto 28px;max-width:670px}
-.work .button{background:var(--ivory);color:var(--brown);border-color:var(--ivory)}
-.site-footer{text-align:center;padding:44px 20px 30px;background:var(--paper)}
-.footer-brand{font-family:'Playfair Display',Georgia,serif;font-size:1.8rem;color:var(--brown);margin-bottom:12px}
-.footer-links{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin:16px 0 22px}
-.footer-links a{text-decoration:none;font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
-.social a{font-size:.8rem;color:var(--camel);text-decoration:none}
-.copyright{font-size:.72rem;color:#999;margin-top:25px}
-@media(max-width:760px){.hero{min-height:500px}.nav{gap:13px 20px}.categories{grid-template-columns:1fr;max-width:540px;padding-bottom:65px}.category-card img{height:300px}.editorial-inner,.featured-card{grid-template-columns:1fr;gap:28px}.editorial-inner{gap:30px}.editorial-band{padding:60px 24px}.featured-card img{height:290px}.featured-copy{padding:30px}.featured-copy h2{font-size:2rem}.intro{padding:65px 24px 50px}}
+.header-inner{max-width:1180px;margin:auto;padding:19px 26px;display:flex;justify-content:space-between;align-items:center;gap:24px}
+.brand{text-decoration:none;color:var(--brown);font-family:'Playfair Display',Georgia,serif;font-size:1.65rem;line-height:1.1}
+.brand small{display:block;font:500 .58rem 'DM Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--camel);margin-top:6px}
+.nav{display:flex;gap:clamp(14px,2.3vw,30px);align-items:center;flex-wrap:wrap}
+.nav a,.footer-links a{text-decoration:none;text-transform:uppercase;font-size:.67rem;letter-spacing:.13em;color:var(--brown)}
+.nav a:hover,.footer-links a:hover{color:var(--camel)}
+.nav .nav-cta{border:1px solid var(--camel);padding:9px 13px}
+.hero{max-width:1320px;margin:auto;padding:42px 28px 70px;display:grid;grid-template-columns:1.02fr .98fr;gap:54px;align-items:center}
+.hero-copy{padding:35px 0 35px 4vw}
+.eyebrow,.kicker{font-size:.67rem;letter-spacing:.21em;text-transform:uppercase;color:var(--camel)}
+.hero h1{font:400 clamp(2.8rem,5.2vw,5.2rem)/1.08 'Playfair Display',Georgia,serif;color:var(--brown);margin:22px 0}
+.hero-copy .lead{font-size:1rem;color:var(--muted);max-width:490px;margin-bottom:28px}
+.hero-image{width:100%;height:min(66vw,640px);min-height:440px;object-fit:cover;display:block}
+.button{display:inline-block;text-decoration:none;background:var(--brown);color:var(--paper);padding:13px 21px;text-transform:uppercase;letter-spacing:.13em;font-size:.66rem;border:1px solid var(--brown);transition:.2s}
+.button:hover{background:transparent;color:var(--brown)}
+.button.light{background:transparent;color:var(--brown);border-color:var(--camel);margin-left:8px}
+.button.light:hover{background:var(--ivory)}
+.section{padding:76px 26px}
+.section-inner{max-width:1120px;margin:auto}
+.center{text-align:center}
+.section h2{font:400 clamp(2rem,4vw,3.25rem)/1.18 'Playfair Display',Georgia,serif;color:var(--brown);margin:12px 0 16px}
+.section-intro{max-width:650px;margin:0 auto;color:var(--muted)}
+.work-preview{background:var(--ivory)}
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}
+.work-card{text-decoration:none;display:block}
+.work-card img{width:100%;height:330px;object-fit:cover;display:block;background:var(--taupe)}
+.work-card h3{font:400 1.45rem 'Playfair Display',Georgia,serif;color:var(--brown);margin:15px 0 4px}
+.work-card p{font-size:.86rem;color:var(--muted)}
+.text-link{display:inline-block;margin-top:13px;text-decoration:none;text-transform:uppercase;letter-spacing:.14em;font-size:.66rem;color:var(--camel)}
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:65px;align-items:center}
+.about img{width:100%;max-height:520px;object-fit:cover}
+.about-copy p{color:var(--muted);margin:0 0 15px}
+.journal-band{background:#eee8de}
+.journal-inner{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.journal-inner img{width:100%;height:350px;object-fit:cover}
+.journal-inner p{color:var(--muted);margin-bottom:20px}
+.contact{background:var(--brown);color:var(--ivory);text-align:center}
+.contact h2{color:var(--ivory)}
+.contact p{color:#e2dacf;max-width:650px;margin:0 auto 25px}
+.contact .button{background:var(--ivory);border-color:var(--ivory);color:var(--brown)}
+.site-footer{text-align:center;padding:38px 20px;background:var(--paper)}
+.footer-name{font:400 1.7rem 'Playfair Display',Georgia,serif;color:var(--brown)}
+.footer-links{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin:18px 0}
+.social a{font-size:.78rem;color:var(--camel);text-decoration:none}
+.copyright{font-size:.7rem;color:#999;margin-top:18px}
+@media(max-width:800px){.header-inner{flex-direction:column;padding:18px 20px}.nav{justify-content:center;gap:12px 18px}.hero{grid-template-columns:1fr;padding:22px 20px 52px;gap:24px}.hero-copy{padding:25px 3px 0}.hero-image{height:420px;min-height:0;order:-1}.work-grid{grid-template-columns:1fr;max-width:520px;margin:32px auto 0}.work-card img{height:320px}.about,.journal-inner{grid-template-columns:1fr;gap:28px}.section{padding:58px 22px}.journal-inner img{height:280px}.button.light{margin:10px 0 0}}
 </style>
 </head>
 <body>
-<header class="site-header" id="top">
-  <div class="topline">
-    <a class="brand" href="index.html">For The Moment</a>
-    <span class="brand-sub">Amanda Turner · Lifestyle &amp; UGC Creator</span>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">Amanda Turner<small>UGC Creator · Visual Storyteller</small></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="blog.html">Journal</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </nav>
   </div>
-  <nav class="nav" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="blog.html">Journal</a>
-    <a href="beauty.html">Beauty</a>
-    <a href="#home-lifestyle">Home</a>
-    <a href="food.html">Food</a>
-    <a href="travel.html">Lifestyle</a>
-    <a href="#work-with-me">Work With Me</a>
-  </nav>
 </header>
-
 <main>
   <section class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">Beauty · Home · Food · Everyday Life</p>
-      <h1>Creating content for the moments in between.</h1>
-      <p>A thoughtful mix of everyday discoveries, personal style, good food and the little details that make a house feel like home.</p>
-      <a class="button" href="blog.html">Explore the Journal</a>
+    <div class="hero-copy">
+      <p class="eyebrow">Beauty · Home · Food · Lifestyle</p>
+      <h1>Romanticizing the everyday. Making a mess in the kitchen.</h1>
+      <p class="lead">I'm Amanda — a UGC creator and visual storyteller creating thoughtful, personality-driven content for the products and little moments that make everyday life more interesting.</p>
+      <a class="button" href="portfolio.html">View my portfolio</a>
+      <a class="button light" href="blog.html">Explore the journal</a>
+    </div>
+    <img class="hero-image" src="amanda-content-creator.JPG" alt="Amanda Turner, UGC creator and visual storyteller">
+  </section>
+
+  <section class="section work-preview">
+    <div class="section-inner center">
+      <p class="kicker">Selected creative work</p>
+      <h2>Good stories start with the details.</h2>
+      <p class="section-intro">From beauty routines to home finds and food worth sharing, I create content that feels considered, engaging and genuinely lived in.</p>
+      <div class="work-grid">
+        <a class="work-card" href="portfolio.html#beauty">
+          <img src="beauty.JPG" alt="Beauty and skincare content">
+          <h3>Beauty</h3><p>Product features, routines and honest first impressions.</p>
+          <span class="text-link">Explore my work →</span>
+        </a>
+        <a class="work-card" href="portfolio.html#home">
+          <img src="amanda-content-creator.JPG" alt="Lifestyle and home content">
+          <h3>Home &amp; Lifestyle</h3><p>Everyday products, home projects and personality-led storytelling.</p>
+          <span class="text-link">Explore my work →</span>
+        </a>
+        <a class="work-card" href="portfolio.html#food">
+          <img src="food.JPEG" alt="Food styling and entertaining">
+          <h3>Food &amp; Entertaining</h3><p>Recipes, hosting, product styling and moments around the table.</p>
+          <span class="text-link">Explore my work →</span>
+        </a>
+      </div>
+      <p style="margin-top:34px"><a class="button" href="portfolio.html">See all portfolio work</a></p>
     </div>
   </section>
 
-  <section class="intro">
-    <p class="kicker">A lifestyle journal by Amanda Turner</p>
-    <h2>Beautifully ordinary. Thoughtfully told.</h2>
-    <p>For The Moment is a lifestyle space celebrating beauty, home, food and everyday discoveries. Through photography, storytelling and honest recommendations, I share the products, places and small moments worth remembering.</p>
-  </section>
-
-  <section class="categories" aria-label="Explore the journal">
-    <a class="category-card" href="beauty.html">
-      <div class="category-image"><img src="beauty.JPG" alt="Beauty and skincare favorites"></div>
-      <h3>Beauty</h3>
-      <p>Skincare, makeup, tried-and-loved finds and realistic routines.</p>
-      <span class="learn">Explore beauty →</span>
-    </a>
-    <a class="category-card" href="#home-lifestyle">
-      <div class="category-image"><img src="amanda-content-creator.JPG" alt="Amanda Turner, creator of For The Moment"></div>
-      <h3>Home &amp; Everyday</h3>
-      <p>Thoughtful details, home projects, routines and the things that make everyday life feel special.</p>
-      <span class="learn">A little more about the journal ↓</span>
-    </a>
-    <a class="category-card" href="food.html">
-      <div class="category-image"><img src="food.JPEG" alt="Food, recipes and entertaining"></div>
-      <h3>Food</h3>
-      <p>Recipes, entertaining, restaurant discoveries and memorable meals.</p>
-      <span class="learn">Explore food →</span>
-    </a>
-  </section>
-
-  <section class="editorial-band" id="home-lifestyle">
-    <div class="editorial-inner">
+  <section class="section" id="about">
+    <div class="section-inner about">
       <img src="amanda-content-creator.JPG" alt="Amanda Turner">
-      <div class="editorial-copy">
-        <p class="kicker">A little introduction</p>
-        <h2>Meet Amanda</h2>
-        <p>I'm Amanda Turner — a content creator with a background in luxury wedding photography and a love for visual storytelling.</p>
-        <p>For The Moment began as a photography business and has grown into a lifestyle journal where beautiful imagery meets real life: beauty finds, home projects, food worth sharing and places that stay with you.</p>
-        <p>My approach is equal parts thoughtful visuals and personality-driven storytelling — polished, but always personal.</p>
-        <a class="button dark" href="blog.html">Read the Journal</a>
+      <div class="about-copy">
+        <p class="kicker">A little about me</p>
+        <h2>An eye for the details. A soft spot for the everyday.</h2>
+        <p>I'm Amanda Turner, a creator based in Upstate New York. Before creating UGC, I worked as a wedding photographer, where I developed a lasting appreciation for light, composition and the small details that make a story feel personal.</p>
+        <p>Today, I bring that visual foundation to beauty, home, food and lifestyle content — with a conversational voice, a little humor and room for real life.</p>
+        <a class="button" href="about.html">More about Amanda</a>
       </div>
     </div>
   </section>
 
-  <section class="featured">
-    <a href="posts/kyoto-bamboo-forest.html">
-      <div class="featured-card">
-        <img src="kyoto-japan-bamboo-forest-01.JPG" alt="The bamboo pathways of Kyoto, Japan">
-        <div class="featured-copy">
-          <p class="kicker">From the journal · Travel &amp; lifestyle</p>
-          <h2>Exploring Kyoto's Bamboo Forest</h2>
-          <p>A destination story from the journal, with a little inspiration for your next adventure.</p>
-          <span class="learn">Read the story →</span>
-        </div>
+  <section class="section journal-band">
+    <div class="section-inner journal-inner">
+      <img src="kyoto-japan-bamboo-forest-01.JPG" alt="Bamboo forest in Kyoto, Japan">
+      <div>
+        <p class="kicker">Beyond the portfolio</p>
+        <h2>A place for the things I want to remember.</h2>
+        <p>The Journal is where I share travel notes, home projects, beauty discoveries, recipes and the everyday experiments that don't always go to plan.</p>
+        <a class="button" href="blog.html">Visit the journal</a>
       </div>
-    </a>
+    </div>
   </section>
 
-  <section class="work" id="work-with-me">
-    <div class="work-inner">
+  <section class="section contact" id="contact">
+    <div class="section-inner">
       <p class="eyebrow">For brands &amp; creative partners</p>
-      <h2>Let's create something worth remembering.</h2>
-      <p>I partner with beauty, home, food and lifestyle brands to create thoughtful UGC, product photography and personality-led social content. With a photographer's eye and a storyteller's approach, I create content that feels natural, engaging and true to the brand.</p>
-      <a class="button" href="#contact">Work With Amanda</a>
+      <h2>Have something good in mind?</h2>
+      <p>I'm available for UGC, product photography and creative partnerships across beauty, home, food and lifestyle.</p>
+      <a class="button" href="mailto:hello@amandaturner.com?subject=Brand%20collaboration%20inquiry">Get in touch</a>
     </div>
-  </section>
-
-  <section class="intro" id="contact">
-    <p class="kicker">Collaborations &amp; inquiries</p>
-    <h2>Tell me what you're dreaming up.</h2>
-    <p>For UGC projects, sponsored content, photography and creative partnerships, send a note below.</p>
-    <form action="https://formspree.io/f/mnpndpol" method="POST" style="max-width:680px;margin:30px auto 0;text-align:left">
-      <label for="name" style="display:block;font-size:.75rem;letter-spacing:.08em;margin:0 0 6px">Name</label>
-      <input id="name" type="text" name="name" placeholder="Your name" required style="width:100%;padding:14px;border:1px solid var(--line);background:white;margin-bottom:14px;font:inherit">
-      <label for="email" style="display:block;font-size:.75rem;letter-spacing:.08em;margin:0 0 6px">Email</label>
-      <input id="email" type="email" name="email" placeholder="Email address" required style="width:100%;padding:14px;border:1px solid var(--line);background:white;margin-bottom:14px;font:inherit">
-      <label for="company" style="display:block;font-size:.75rem;letter-spacing:.08em;margin:0 0 6px">Brand or company</label>
-      <input id="company" type="text" name="company" placeholder="Company name" style="width:100%;padding:14px;border:1px solid var(--line);background:white;margin-bottom:14px;font:inherit">
-      <label for="service" style="display:block;font-size:.75rem;letter-spacing:.08em;margin:0 0 6px">Project type</label>
-      <input id="service" type="text" name="service" placeholder="UGC, sponsored content, photography..." style="width:100%;padding:14px;border:1px solid var(--line);background:white;margin-bottom:14px;font:inherit">
-      <label for="message" style="display:block;font-size:.75rem;letter-spacing:.08em;margin:0 0 6px">A little about your project</label>
-      <textarea id="message" name="message" rows="5" placeholder="Tell me what you have in mind..." required style="width:100%;padding:14px;border:1px solid var(--line);background:white;margin-bottom:18px;font:inherit;resize:vertical"></textarea>
-      <input type="hidden" name="_next" value="https://forthemomentphoto.github.io/forthemoment/thank-you.html">
-      <button class="button dark" type="submit" style="cursor:pointer;font-family:inherit">Send Inquiry</button>
-    </form>
   </section>
 </main>
-
 <footer class="site-footer">
-  <div class="footer-brand">For The Moment</div>
+  <div class="footer-name">Amanda Turner</div>
   <div class="footer-links">
-    <a href="index.html">Home</a><a href="blog.html">Journal</a><a href="beauty.html">Beauty</a><a href="#home-lifestyle">Home</a><a href="food.html">Food</a><a href="travel.html">Lifestyle</a><a href="#work-with-me">Work With Me</a>
+    <a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="blog.html">Journal</a><a href="about.html">About</a><a href="#contact">Contact</a>
   </div>
   <div class="social"><a href="https://instagram.com/forthemomentphoto" target="_blank" rel="noopener noreferrer">Instagram</a></div>
-  <p class="copyright">© 2026 For The Moment | Amanda Turner</p>
+  <p class="copyright">© 2026 Amanda Turner. All rights reserved.</p>
 </footer>
 </body>
 </html>
