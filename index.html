@@ -19,8 +19,8 @@ body{font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--paper);l
 a{color:inherit}
 .site-header{background:var(--paper);border-bottom:1px solid var(--line);position:relative;z-index:5}
 .header-inner{max-width:1180px;margin:auto;padding:19px 26px;display:flex;justify-content:space-between;align-items:center;gap:24px}
-.brand{text-decoration:none;color:var(--brown);font-family:'Playfair Display',Georgia,serif;font-size:1.65rem;line-height:1.1}
-.brand small{display:block;font:500 .58rem 'DM Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--camel);margin-top:6px}
+.brand{text-decoration:none;color:var(--brown);font-family:'Playfair Display',Georgia,serif;font-size:2.15rem;line-height:1.05;letter-spacing:.01em}
+.brand small{display:block;font:500 .62rem 'DM Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--camel);margin-top:8px}
 .nav{display:flex;gap:clamp(14px,2.3vw,30px);align-items:center;flex-wrap:wrap}
 .nav a,.footer-links a{text-decoration:none;text-transform:uppercase;font-size:.67rem;letter-spacing:.13em;color:var(--brown)}
 .nav a:hover,.footer-links a:hover{color:var(--camel)}
@@ -63,7 +63,7 @@ a{color:inherit}
 .footer-links{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin:18px 0}
 .social a{font-size:.78rem;color:var(--camel);text-decoration:none}
 .copyright{font-size:.7rem;color:#999;margin-top:18px}
-@media(max-width:800px){.header-inner{flex-direction:column;padding:18px 20px}.nav{justify-content:center;gap:12px 18px}.hero{grid-template-columns:1fr;padding:22px 20px 52px;gap:24px}.hero-copy{padding:25px 3px 0}.hero-image{height:420px;min-height:0;order:-1}.work-grid{grid-template-columns:1fr;max-width:520px;margin:32px auto 0}.work-card img{height:320px}.about,.journal-inner{grid-template-columns:1fr;gap:28px}.section{padding:58px 22px}.journal-inner img{height:280px}.button.light{margin:10px 0 0}}
+@media(max-width:800px){.header-inner{flex-direction:column;padding:18px 20px}.brand{font-size:2rem}.brand small{font-size:.58rem}.nav{justify-content:center;gap:12px 18px}.hero{grid-template-columns:1fr;padding:22px 20px 52px;gap:24px}.hero-copy{padding:25px 3px 0}.hero-image{height:420px;min-height:0;order:-1}.work-grid{grid-template-columns:1fr;max-width:520px;margin:32px auto 0}.work-card img{height:320px}.about,.journal-inner{grid-template-columns:1fr;gap:26px}.about-copy,.about img{grid-column:1;grid-row:auto}.about img{height:360px;max-height:none;order:-1}.section{padding:58px 22px}.about-section,.journal-band{padding-top:58px;padding-bottom:58px}.journal-inner img{height:300px}.journal-inner>div{max-width:none}.button.light{margin:10px 0 0}}
 </style>
 </head>
 <body>
@@ -117,7 +117,7 @@ a{color:inherit}
     </div>
   </section>
 
-  <section class="section" id="about">
+  <section class="section about-section" id="about">
     <div class="section-inner about">
       <img src="amanda-content-creator.JPG" alt="Amanda Turner">
       <div class="about-copy">
